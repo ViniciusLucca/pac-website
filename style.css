@@ -22,7 +22,7 @@ div.first-header-row {
 }
 
 .header-row ul{
-    padding: 30px;
+    padding: 10px 15px 40px 15px;
     justify-content: center;
 }
 
@@ -55,9 +55,17 @@ header input[type="checkbox"]{
 /* ARTICLE SETTINGS */
 
 article .article-header {
-    margin-left: 20px;
+    margin-bottom: 20px;
     font-size: 1rem;
     border-left: 2px solid green;
     padding-left: 5px;
+    color: brown;
+    
 }
 
+/* MAIN SETTINGS */
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
