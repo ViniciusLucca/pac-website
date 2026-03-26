@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.header-row, .header-row ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50 10px 0 10px;
+}
+
+div.first-header-row {
+    background-color: #a4a4a4;
+}
+
+.header-row ul{
+    padding: 30px;
+}
+
+.header-row ul li::before, .header-row ul li:last-of-type::after{
+    content: "|";
+    font-weight: bold;
+    color: brown;
+    padding: 0 15px;
+}
+
+.header-row ul li:first-of-type::before{
+    padding-left: 0;
+}
+
+.header-row ul li:last-of-type::after{
+    padding-right: 0;
+}
+
+.header-row ul li{
+    list-style-type: none;
+}
+
+header input[type="checkbox"]{
+    display: none;
+}
