@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAC - Home</title>
+    <title>PAC - Em Breve</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+        }
+
+        .coming-soon-container {
+            text-align: center;
+        }
+
+        .coming-soon-container h1 {
+            font-size: 3.5rem;
+            color: brown;
+            border-left: 4px solid green;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .coming-soon-container p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-row first-header-row">
-            <!-- TODO: setar o display desse input como hidden, para só ativá-lo pela label -->
             <input type="checkbox" name="menu" id="menu">
             <label for="menu">
                 <img src="images/three-horizontal-lines-icon.png" alt="ícone de 3 linhas (menu)" class="menu-icon">
@@ -26,13 +52,12 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <article>
-            <h3 class="article-header">Destaque</h3>
-            <img src="images/landscape1.png" alt="countryside landscape" class="article-image">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatibus libero error deserunt reprehenderit illo nihil officia quae, suscipit expedita fugit, consequatur nobis exercitationem. Debitis eveniet a impedit voluptates mollitia.</p>
-            <p class="article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias adipisci voluptas voluptates laboriosam aut quaerat voluptatem similique placeat accusamus excepturi ad eligendi, qui fugiat vero itaque perspiciatis vitae aspernatur repudiandae!</p>
-        </article>
+        <div class="coming-soon-container">
+            <h1>Em Breve!</h1>
+            <p>Esta página está em construção. Volte em breve para mais novidades.</p>
+        </div>
     </main>
 </body>
 </html>

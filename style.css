@@ -18,7 +18,14 @@ div.header-row{
 }
 
 div.first-header-row {
-    background-color: #F4F4F4;
+    background-color: #9eecac;
+    justify-content: center;
+    position: relative;
+}
+
+.first-header-row label {
+    position: absolute;
+    left: 10px;
 }
 
 .header-row ul{
