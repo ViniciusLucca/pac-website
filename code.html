@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#dee5d7",
+                    "surface-container-low": "#f0f6e8",
+                    "background": "#f5fbee",
+                    "primary": "#006c0c",
+                    "on-tertiary-fixed-variant": "#890f50",
+                    "outline-variant": "#becab7",
+                    "surface-tint": "#006e0c",
+                    "secondary": "#705d00",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f5fbee",
+                    "surface-dim": "#d6dccf",
+                    "secondary-fixed-dim": "#e9c400",
+                    "secondary-container": "#fcd400",
+                    "inverse-on-surface": "#edf3e5",
+                    "on-secondary-fixed": "#221b00",
+                    "on-background": "#171d15",
+                    "outline": "#6f7a6a",
+                    "on-primary-fixed": "#002201",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f5fbee",
+                    "tertiary-container": "#c5447f",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#544600",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#92fa83",
+                    "primary-container": "#1c871e",
+                    "tertiary": "#a52a66",
+                    "on-tertiary-fixed": "#3e0020",
+                    "primary-fixed-dim": "#77dd6a",
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "on-surface": "#171d15",
+                    "on-surface-variant": "#3f4a3b",
+                    "surface-variant": "#dee5d7",
+                    "inverse-primary": "#77dd6a",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe16d",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eaf0e3",
+                    "inverse-surface": "#2c3229",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#005307",
+                    "tertiary-fixed": "#ffd9e4",
+                    "on-secondary-container": "#6e5c00",
+                    "on-primary-container": "#f8fff0",
+                    "surface-container-high": "#e4eadd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "xl": "64px",
+                    "base": "8px",
+                    "md": "24px",
+                    "lg": "40px",
+                    "margin": "20px",
+                    "gutter": "16px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Lexend"],
+                    "button": ["Lexend"],
+                    "body-sm": ["Lexend"],
+                    "label-lg": ["Lexend"],
+                    "headline-lg": ["Lexend"],
+                    "headline-md": ["Lexend"]
+            },
+            "fontSize": {
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrapbook-border { border: 2px solid #171d15; }
+        .terracotta-bg { background-color: #c5447f; } /* Using tertiary container as terracotta-analog */
+        .forest-green-bg { background-color: #006c0c; }
+        .forest-green-border { border: 2px solid #006c0c; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-lg min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200">
+<div class="flex items-center w-12">
+<button class="p-2 focus:outline-none">
+<span class="material-symbols-outlined text-green-800 dark:text-green-500">menu</span>
+</button>
+</div>
+<h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
+<div class="w-12 flex justify-end"></div>
+</header>
+<main class="pt-24 px-margin max-w-4xl mx-auto">
+<!-- Hero Section -->
+<section class="relative mb-lg">
+<div class="bg-surface-container-lowest p-sm scrapbook-border rotate-1 shadow-lg">
+<img alt="Museu da PAC Exterior" class="w-full aspect-video object-cover" data-alt="A grand historical museum building with classical architecture, featuring large stone pillars and a wide staircase. The scene is bathed in golden hour sunlight, creating long, soft shadows and a warm, organic feel. The style is reminiscent of a tactile scrapbook, with rich forest green and terracotta tones in the surrounding greenery and brickwork. The atmosphere is quiet, educational, and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjXzFVeRUCZIHTXTZGObTxSql74_ekisG8pSoABP14Z1LlZRPkvJNYXjKfzVo4_8aPRtIA4Sv3oX1-tT2TPyUNJxKKS3hvt38ZOeeHiPChU2GyMFE6KuAKlsBKSVE3a4w38A94-41AfZtYcNE-oDEnj9grPn2f8189-S9lovKWTJBtQi-_UvyCFbwjCQ8lsQx0hy06ygqYcSYMGPkLTKuBGuOqvE1b4jiHtDBQM8ncWW-pRhAy7-L3xlmbTGC6lE5LADSg_arLLKg"/>
+</div>
+<div class="absolute -bottom-4 -left-2 bg-secondary-container text-on-secondary-container px-md py-xs scrapbook-border -rotate-3 font-headline-md z-10">
+                Saída Anterior: Museu da PAC
+            </div>
+<div class="absolute top-4 -right-4 bg-tertiary-container text-on-tertiary-container px-sm py-xs scrapbook-border rotate-6 font-label-lg z-10">
+                12 de Maio, 2024
+            </div>
+</section>
+<!-- Intro Content -->
+<article class="space-y-md">
+<div class="bg-surface-container-low p-md scrapbook-border relative">
+<div class="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 scrapbook-border border-dashed text-xs uppercase font-bold text-outline">
+                    Relato de Expedição
+                </div>
+<p class="font-body-lg text-on-surface leading-relaxed">
+                    Nossa jornada pelo <span class="font-bold text-primary">Museu da PAC</span> foi uma imersão profunda nas raízes culturais que moldam nossa comunidade. Caminhamos por corredores que contam histórias de gerações passadas, conectando o artesanato tradicional com as vozes contemporâneas que ainda ecoam em nossos bairros.
+                </p>
+</div>
+<!-- Collage Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center py-base">
+<div class="relative">
+<div class="bg-white p-base scrapbook-border -rotate-2 forest-green-border shadow-md">
+<img alt="Artesanato Local" class="w-full h-64 object-cover" data-alt="A close-up shot of detailed traditional pottery being handcrafted by an artisan. The clay is earthy and rich, matching the terracotta and forest green palette of the PAC brand. Soft, natural lighting highlights the texture of the material and the focus of the artist. The image feels tactile and grounded in a community-focused, educational scrapbook style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9D2kt6e9iME_KAzWO2kZR6y9on1Kvecw7G40j8WZB4_g7ZdnkeBSL-rF3eCLFNbbMRv89zRFwuZmNp9sQ_25qLHS7pAirqRpnHSGnLhrKIqd9bbgJJs0Jn_INBrPiEDvtFpZL3IZUU77CcY2HqhaBr_5ARqKLaefme0AUyjN32i3jRfQ0gPWc63qepCX2E1QQ6Y7aagPiWuo_FXV3prx6wNeyQresaEuIxoJlVAjMsO9AryDTJ-XhwLUYEk5BFvkQZhELLSLjaHI"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary px-3 py-1 text-on-primary text-xs font-bold rotate-2">
+                        OFICINA DE ARGILA
+                    </div>
+</div>
+<div class="space-y-sm">
+<h3 class="font-headline-md text-on-surface">Aprendizado Prático</h3>
+<p class="font-body-sm text-on-surface-variant">
+                        Os pequenos aprendizes não apenas viram a arte; eles sentiram a textura da terra. A oficina de cerâmica permitiu que cada criança criasse sua própria peça, entendendo o valor do trabalho manual e da paciência.
+                    </p>
+<div class="flex gap-2 flex-wrap">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-bold scrapbook-border">CULTURA</span>
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold scrapbook-border">PRÁTICA</span>
+</div>
+</div>
+</div>
+<!-- Second Collage Section (Asymmetric) -->
+<div class="flex flex-col md:flex-row-reverse gap-lg items-center py-base">
+<div class="relative w-full md:w-1/2">
+<div class="bg-white p-base scrapbook-border rotate-2 border-tertiary shadow-md">
+<img alt="Galeria de Arte" class="w-full h-64 object-cover" data-alt="A high-ceilinged museum gallery with vibrant contemporary paintings on the walls. The interior is bright and airy, with soft daylight streaming in. The composition captures a group of children looking up in awe at the colorful exhibits. The overall aesthetic is educational and joyful, maintaining the PAC visual identity of organic, tactile storytelling with deep green and warm earthy accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoXy37S0BXvfMPodsGkzQrTNNsBiWnGLJEQ0lPYZ76H2oj9OHJVgWUdHQ2Qn9jDOfq6Dgn3mS8AEUjk88tE-jrB445Tm6C_ztMOVrZvJdREU6R8AyWLxNAdMh-Q5qqKVdZtO4nasCJtVx-nOERXc_YqA8VyWatPGedLOaOsdnM9hnHdaOpgm_fGBTpZXzXRN0IG52qukRY7RQRoJ_R5Rx3PvUxG_5zXYCboP-MokiJ_1j7amUPC9rFxWhgKkhC9R-QTz5c4_DuFsI"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-sm text-right md:text-left">
+<h3 class="font-headline-md text-on-surface">O Olhar do Amanhã</h3>
+<p class="font-body-sm text-on-surface-variant">
+                        Observar a reação dos jovens diante das grandes telas foi o ponto alto do dia. A curiosidade despertada transforma o museu de um lugar de "não toque" para um espaço de "imagine".
+                    </p>
+</div>
+</div>
+<!-- Social Action Section -->
+<div class="mt-lg pt-lg border-t-2 border-stone-300 border-dashed text-center">
+<h4 class="font-headline-md mb-md text-primary">O que você achou dessa saída?</h4>
+<div class="flex flex-col gap-sm">
+<button class="w-full py-md forest-green-bg text-on-primary font-button rounded-none scrapbook-border hover:opacity-90 transition-all flex items-center justify-center gap-base active:scale-95">
+<span class="material-symbols-outlined">chat</span>
+                        DEIXAR UM COMENTÁRIO
+                    </button>
+<div class="flex gap-base">
+<button class="flex-1 py-sm bg-surface-container-highest text-on-surface-variant scrapbook-border flex items-center justify-center gap-xs text-sm font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">share</span> COMPARTILHAR
+                        </button>
+<button class="flex-1 py-sm bg-tertiary-container text-on-tertiary-container scrapbook-border flex items-center justify-center gap-xs text-sm font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">favorite</span> SALVAR
+                        </button>
+</div>
+</div>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center border-t-2 border-dashed border-stone-300 dark:border-stone-700 bg-stone-100 dark:bg-stone-950">
+<div class="text-lg font-bold text-stone-800 dark:text-stone-200">PAC</div>
+<p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2024</p>
+<div class="flex gap-4">
+<a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 no-underline hover:text-green-700" href="#">Sobre Nós</a>
+<a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 no-underline hover:text-green-700" href="#">Transparência</a>
+<a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 no-underline hover:text-green-700" href="#">Privacidade</a>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC] bg-opacity-95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-700">
+<div class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 transition-all active:scale-90">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Início</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 transition-all active:scale-90">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Galeria</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2 transition-all active:scale-90 shadow-sm">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700">Expedições</span>
+</div>
+</nav>
+</body></html>

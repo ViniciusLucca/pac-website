@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#dee5d7",
+                      "surface-container-low": "#f0f6e8",
+                      "background": "#f5fbee",
+                      "primary": "#006c0c",
+                      "on-tertiary-fixed-variant": "#890f50",
+                      "outline-variant": "#becab7",
+                      "surface-tint": "#006e0c",
+                      "secondary": "#705d00",
+                      "on-tertiary": "#ffffff",
+                      "surface": "#f5fbee",
+                      "surface-dim": "#d6dccf",
+                      "secondary-fixed-dim": "#e9c400",
+                      "secondary-container": "#fcd400",
+                      "inverse-on-surface": "#edf3e5",
+                      "on-secondary-fixed": "#221b00",
+                      "on-background": "#171d15",
+                      "outline": "#6f7a6a",
+                      "on-primary-fixed": "#002201",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#f5fbee",
+                      "tertiary-container": "#c5447f",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#544600",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#92fa83",
+                      "primary-container": "#1c871e",
+                      "tertiary": "#a52a66",
+                      "on-tertiary-fixed": "#3e0020",
+                      "primary-fixed-dim": "#77dd6a",
+                      "tertiary-fixed-dim": "#ffb0cc",
+                      "on-surface": "#171d15",
+                      "on-surface-variant": "#3f4a3b",
+                      "surface-variant": "#dee5d7",
+                      "inverse-primary": "#77dd6a",
+                      "on-tertiary-container": "#fffbff",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed": "#ffe16d",
+                      "on-error": "#ffffff",
+                      "surface-container": "#eaf0e3",
+                      "inverse-surface": "#2c3229",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#005307",
+                      "tertiary-fixed": "#ffd9e4",
+                      "on-secondary-container": "#6e5c00",
+                      "on-primary-container": "#f8fff0",
+                      "surface-container-high": "#e4eadd"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "xl": "64px",
+                      "base": "8px",
+                      "md": "24px",
+                      "lg": "40px",
+                      "margin": "20px",
+                      "gutter": "16px",
+                      "sm": "12px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Lexend"],
+                      "button": ["Lexend"],
+                      "body-sm": ["Lexend"],
+                      "label-lg": ["Lexend"],
+                      "headline-lg": ["Lexend"],
+                      "headline-md": ["Lexend"]
+              },
+              "fontSize": {
+                      "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrapbook-rotate-left { transform: rotate(-1deg); }
+        .scrapbook-rotate-right { transform: rotate(1.5deg); }
+        .scrapbook-tape {
+            position: absolute;
+            background: rgba(255, 215, 0, 0.4);
+            backdrop-filter: blur(1px);
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-lg">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200"><div class="flex items-center w-full">
+<div class="flex-1 flex justify-start">
+<span class="material-symbols-outlined text-green-800 dark:text-green-500 cursor-pointer transition-transform duration-200 active:scale-95" data-icon="menu">menu</span>
+</div>
+<div class="flex-none">
+<h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
+</div>
+<div class="flex-1 flex justify-end">
+<span class="material-symbols-outlined text-green-800 dark:text-green-500" data-icon="person">person</span>
+</div>
+</div></header>
+<main class="pt-24 pb-32 px-margin max-w-5xl mx-auto space-y-xl">
+<!-- Page Header -->
+<div class="space-y-base scrapbook-rotate-left">
+<h2 class="font-headline-lg text-headline-lg text-primary">Expedições Culturais</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Junte-se a nós em jornadas imersivas para descobrir o coração da nossa herança cultural e histórica.
+            </p>
+</div>
+<!-- Section: Próxima Saída -->
+<section class="relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center bg-surface-container p-md md:p-lg border-2 border-primary-container rounded-xl shadow-sm scrapbook-rotate-right">
+<!-- Logistics Column -->
+<div class="space-y-md">
+<div class="inline-block px-sm py-xs bg-secondary-container text-on-secondary-container border-2 border-on-secondary-container rounded-full font-label-lg text-label-lg -rotate-1">
+                        PRÓXIMA SAÍDA
+                    </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pelourinho: Raízes e Ritmos</h3>
+<div class="space-y-sm">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="calendar_month">calendar_month</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Data</p>
+<p class="font-body-sm text-body-sm">15 de Junho, 2024 - 09:00h</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Endereço</p>
+<p class="font-body-sm text-body-sm">Centro Histórico, Salvador - BA</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="meet_guide">meet</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Ponto de Encontro</p>
+<p class="font-body-sm text-body-sm">Largo do Pelourinho, em frente à Fundação Casa de Jorge Amado.</p>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto px-lg py-md bg-primary text-on-primary font-button text-button rounded-xl border-b-4 border-stone-900 active:translate-y-1 active:border-b-0 transition-all">
+                        Venha conosco!
+                    </button>
+</div>
+<!-- Representative Image Column -->
+<div class="relative group">
+<div class="scrapbook-tape -top-4 -left-4 scrapbook-rotate-left"></div>
+<div class="scrapbook-tape -bottom-4 -right-4 scrapbook-rotate-right"></div>
+<div class="p-sm bg-white border-2 border-stone-800 rounded-lg shadow-lg group-hover:rotate-1 transition-transform duration-300">
+<img alt="Expedição Pelourinho" class="w-full aspect-square object-cover rounded-md" data-alt="A vibrant, high-angle photograph capturing the colonial architecture of Pelourinho in Salvador, Brazil. Brightly colored buildings in shades of ochre, pink, and sky blue line the cobblestone streets under a brilliant, sun-drenched sky. The mood is celebratory and historically rich, reflecting a tactile scrapbook aesthetic with warm, natural lighting and deep, saturated tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAqHSPH6YbqAhy1nreq4tneF41F5chrptsaQ8BlmofJxb__7VDV66nVtQ92oW-RFTnkuwWKeiK50ciOb5_kw5NG4Rzr8GwKAUdKEDiTkXNoRnUblC-nQz-n8E84DslWcOTnBDeyA2OwU8muZ1_9PLWr3BiD-smSlU8E_0Y_8_QYJdWLoF9BE7-YyMODBjEw1yutQbzqnEktU966yRhKmG83htZhSm06Ov3RFl6Ls02N-tPT8lbgI7S0aULIgEw4A0inTBZq5kQK5E"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Saídas Anteriores -->
+<section class="space-y-lg">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary" data-icon="history">history</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Saídas Anteriores</h3>
+</div>
+<div class="grid grid-cols-1 gap-gutter">
+<!-- Card 1 -->
+<article class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+<img alt="Museu de Arte Moderna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated architectural shot of a modern museum interior featuring soaring white concrete walls and large glass panels that invite soft, diffused daylight. The clean lines and minimalist aesthetic are emphasized by a high-key light mode style. The atmosphere is serene and intellectual, using a palette of soft grays and warm ivory to convey cultural prestige and modern design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-5BRdOivwFXSRTq9Dp_7C8yUdEryYP7X8nTuEeovN-BU3gRouyic-rNeEfp_tiodelydciZO4gT0GDhNKmxJVdGqkvWHpYWz5xTDLi95skiHzbKrQfR8eEcmF9DT1-qG2lsJbI1xUBND8Znf_s2qqQy0Ot-SCBUzoUzmzE_dj_cXx5j_xGb6RRFjT51LndJ7qXs73bngZzwyH-K8yxOr9xqB3e7-xlY3HxZchgBxJiKw4nWbxGLv2x-r_bwJeeRjyXconVIPZWUs"/>
+</div>
+<div class="p-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Museu de Arte Moderna</h4>
+<div class="flex text-secondary items-center">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="ml-xs font-label-lg text-label-lg">4.8</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                                Uma tarde dedicada a explorar a arte contemporânea brasileira e sua influência na identidade nacional, com oficina de colagem.
+                            </p>
+</div>
+<button class="mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors">
+                            Saiba mais
+                        </button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+<img alt="Real Gabinete Português" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An expansive, wide-angle photograph of a historic wooden library with towering shelves filled with antique leather-bound books. Ornate Neo-Manueline architecture and intricate carvings are illuminated by warm, golden light filtering through a decorative skylight. The mood is majestic and scholarly, with deep wood tones and a rich, tactile sense of history consistent with a premium cultural scrapbook aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIO__i4P2k6GXT_sf74aI3moim5XlI8y22lv1_GBwU3pCZZk0dZ6lOJc749y8iBnCZKz4Mzzso58004ZsfYsy1klMVYhZV6rfGkaGdNiIwgqEKtOO-Qffpn8WEXUvVchpcSd8c8UR8lKKaVWTmB1JfnQP9QBKkn8I6JhoEHBsz1zoal1T8A5Ewd2w-mB9yCzYSdU2DOC5kbirvl8WP-xzrB3e60cgsWuYDaE4nNyuKAkw1er8gyxJKU_yPB57OtcExoOb64WuRz5E"/>
+</div>
+<div class="p-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Real Gabinete Português</h4>
+<div class="flex text-secondary items-center">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-xs font-label-lg text-label-lg">5.0</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                                Uma jornada literária pelos clássicos da língua portuguesa em um dos cenários mais deslumbrantes do Brasil.
+                            </p>
+</div>
+<button class="mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors">
+                            Saiba mais
+                        </button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC]/95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-200"><button class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Início</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Galeria</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Expedições</span>
+</button>
+</nav>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 dark:bg-stone-950 border-t-2 border-dashed border-stone-300 dark:border-stone-700">
+<p class="text-lg font-bold text-stone-800 dark:text-stone-200">PAC</p>
+<div class="flex gap-md">
+<a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 hover:text-green-700 no-underline transition-opacity" href="#">Sobre Nós</a>
+<a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 hover:text-green-700 no-underline transition-opacity" href="#">Transparência</a>
+<a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 hover:text-green-700 no-underline transition-opacity" href="#">Privacidade</a>
+</div>
+<p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">
+            PAC - Pequenos Aprendizados Culturais 2024
+        </p>
+</footer>
+</body></html>

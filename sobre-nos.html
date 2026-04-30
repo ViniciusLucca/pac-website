@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>.scrapbook-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAD3gH1RU8fN7RPcdadcz0S7ylKhmKCTMeNW0_9-MCVeDBjR-Bvuk40z47P24YuudSB3m-l2MHBOB6JFWfa6gtHGFNJGg8pUY0QyWTCnwzb1VThNDUsbEJAFjKg5NHtF3-QA7FKlp_T1lHMGDwfujopSA8br3gKSRvea-NwfbKbRacLH7X8JNT1Rx9omt913JH5M2ZfwQ1D3PLjNw5i76Jj4ADNGpo5cZTbCopbReFB3n8jFiW9ATkR57CDzjmikRMPLcWphNjh8qg)
+    }
+.handwritten {
+    font-family: "Gochi Hand", cursive
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }</style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#dee5d7",
+                    "surface-container-low": "#f0f6e8",
+                    "background": "#f5fbee",
+                    "primary": "#006c0c",
+                    "on-tertiary-fixed-variant": "#890f50",
+                    "outline-variant": "#becab7",
+                    "surface-tint": "#006e0c",
+                    "secondary": "#705d00",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f5fbee",
+                    "surface-dim": "#d6dccf",
+                    "secondary-fixed-dim": "#e9c400",
+                    "secondary-container": "#fcd400",
+                    "inverse-on-surface": "#edf3e5",
+                    "on-secondary-fixed": "#221b00",
+                    "on-background": "#171d15",
+                    "outline": "#6f7a6a",
+                    "on-primary-fixed": "#002201",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f5fbee",
+                    "tertiary-container": "#c5447f",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#544600",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#92fa83",
+                    "primary-container": "#1c871e",
+                    "tertiary": "#a52a66",
+                    "on-tertiary-fixed": "#3e0020",
+                    "primary-fixed-dim": "#77dd6a",
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "on-surface": "#171d15",
+                    "on-surface-variant": "#3f4a3b",
+                    "surface-variant": "#dee5d7",
+                    "inverse-primary": "#77dd6a",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe16d",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eaf0e3",
+                    "inverse-surface": "#2c3229",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#005307",
+                    "tertiary-fixed": "#ffd9e4",
+                    "on-secondary-container": "#6e5c00",
+                    "on-primary-container": "#f8fff0",
+                    "surface-container-high": "#e4eadd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "xl": "64px",
+                    "base": "8px",
+                    "md": "24px",
+                    "lg": "40px",
+                    "margin": "20px",
+                    "gutter": "16px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Lexend"],
+                    "button": ["Lexend"],
+                    "body-sm": ["Lexend"],
+                    "label-lg": ["Lexend"],
+                    "headline-lg": ["Lexend"],
+                    "headline-md": ["Lexend"]
+            },
+            "fontSize": {
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden scrapbook-texture">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] border-b-2 border-stone-800 shadow-none">
+<button class="transition-transform duration-200 active:scale-95 flex items-center justify-center p-2 rounded-full hover:bg-stone-200/50">
+<span class="material-symbols-outlined text-green-800" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-black text-green-800 uppercase tracking-tighter font-serif">PAC</h1>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 pb-32 px-margin max-w-4xl mx-auto space-y-12">
+<!-- Hero Section: Scrapbook Title -->
+<section class="relative">
+<div class="absolute -top-4 -left-2 bg-secondary-container/80 px-4 py-1 -rotate-3 border-2 border-stone-800 z-10">
+<span class="text-on-secondary-container font-label-lg uppercase">Nossa História</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-4 border-l-8 border-primary pl-4">Pequenos Aprendizados Culturais</h2>
+</section>
+<!-- Institutional Content Asymmetric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- History Text -->
+<div class="md:col-span-7 space-y-6">
+<div class="bg-surface-container p-8 border-2 border-stone-800 shadow-[4px_4px_0px_0px_rgba(23,29,21,1)]">
+<p class="font-body-lg text-on-surface mb-4">
+                        A PAC nasceu de um sonho coletivo de educadores e entusiastas da cultura brasileira em 2018. Percebemos que o aprendizado cultural acontecia apenas em livros, longe do toque, do cheiro e do pé no chão.
+                    </p>
+<p class="font-body-lg text-on-surface">
+                        Decidimos criar expedições que transformam crianças em pequenos exploradores de suas próprias raízes, conectando comunidades urbanas e rurais através do afeto e do conhecimento compartilhado.
+                    </p>
+</div>
+<!-- Values "Pinned" Items -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-tertiary-container text-on-tertiary-container p-4 border-2 border-stone-800 rotate-1 shadow-[2px_2px_0px_0px_rgba(23,29,21,1)]">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<h4 class="font-label-lg mt-2">Empatia</h4>
+</div>
+<div class="bg-secondary-container text-on-secondary-container p-4 border-2 border-stone-800 -rotate-2 shadow-[2px_2px_0px_0px_rgba(23,29,21,1)]">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<h4 class="font-label-lg mt-2">Educação Viva</h4>
+</div>
+</div>
+</div>
+<!-- Image Block: The "Photo" -->
+<div class="md:col-span-5 relative group">
+<div class="bg-white p-3 border-2 border-stone-800 shadow-xl rotate-3 hover:rotate-0 transition-transform duration-300">
+<img alt="PAC Team in activity" class="w-full aspect-[4/5] object-cover border-2 border-stone-100" data-alt="A heartwarming photograph of a diverse group of educators and children sitting in a circle on a sun-drenched grassy park. They are engaged in a craft activity with colorful papers and natural materials, reflecting an organic scrapbook aesthetic. The lighting is warm and golden, suggesting a late afternoon setting. The mood is joyful and inclusive, with earthy tones like forest green and terracotta dominating the visual field to create a welcoming, educational environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD1supwJjQqpTiXPeTWTy1IsIzsK-cXtpeovUtH517ATbOGasxTOrisAiKgZYG4FLles4Y0pqji0IZoUR3ReP5vsGM3Zlhhw2jVmvf9M4kEZ4hV2ynWxzy9jt5JyzB5L1HnxSSVNaeYL8QbR8wh1v3cm3J3ugijEGUfdQmqRE_CsJOCpKSipejNWAMzVDZtMF04oNQz_G6blHqYMy9LoxCxRFXGfpd2wYJMtfA11098K7Htr14KLLQBRwHK-AthgtUzLYviVDyMXM"/>
+<div class="mt-4 text-center">
+<p class="handwritten text-xl text-stone-800">Expedição Vale do Ribeira, 2023</p>
+</div>
+</div>
+<!-- Decorative "Tape" -->
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 w-24 h-8 bg-stone-400/40 border-y-2 border-stone-500/20 rotate-12 pointer-events-none"></div>
+</div>
+</div>
+<!-- Mission Statement -->
+<section class="bg-primary text-on-primary p-10 border-2 border-stone-800 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-20">
+<span class="material-symbols-outlined text-8xl" data-icon="school">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase tracking-wider">Nossa Missão</h3>
+<p class="text-body-lg italic">
+                "Promover o encontro entre gerações e territórios, transformando a diversidade cultural brasileira em pilar fundamental para o desenvolvimento de uma infância consciente, criativa e empática."
+            </p>
+</section>
+<!-- Navigation Buttons -->
+<section class="flex flex-col sm:flex-row gap-4 pt-8">
+<button class="flex-1 bg-surface-container-highest text-on-surface border-2 border-stone-800 py-4 px-6 font-button uppercase flex items-center justify-center gap-2 transition-transform active:scale-95 hover:bg-surface-container-high">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+                Página Principal
+            </button>
+<button class="flex-1 bg-primary text-on-primary border-2 border-stone-800 py-4 px-6 font-button uppercase flex items-center justify-center gap-2 transition-transform active:scale-95 hover:bg-primary-container shadow-[4px_4px_0px_0px_rgba(23,29,21,1)]">
+                Próximas Saídas
+                <span class="material-symbols-outlined" data-icon="explore">explore</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 border-t-2 border-dashed border-stone-300">
+<h3 class="text-lg font-bold text-stone-800 font-serif">PAC - Pequenos Aprendizados Culturais 2024</h3>
+<div class="flex gap-6">
+<a class="font-serif text-sm italic text-stone-500 no-underline hover:text-green-700 transition-opacity" href="#">Sobre Nós</a>
+<a class="font-serif text-sm italic text-stone-500 no-underline hover:text-green-700 transition-opacity" href="#">Transparência</a>
+<a class="font-serif text-sm italic text-stone-500 no-underline hover:text-green-700 transition-opacity" href="#">Privacidade</a>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC] bg-opacity-95 backdrop-blur-sm border-t-2 border-stone-800">
+<a class="flex flex-col items-center justify-center text-stone-600 px-3 py-1 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 px-3 py-1 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700">Galeria</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-900">Expedições</span>
+</a>
+</nav>
+</body></html>
