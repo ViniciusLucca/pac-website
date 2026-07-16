@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;display=swap"
     rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -88,7 +88,8 @@
             "body-sm": ["Lexend"],
             "label-lg": ["Lexend"],
             "headline-lg": ["Lexend"],
-            "headline-md": ["Lexend"]
+            "headline-md": ["Lexend"],
+            "serif": ["Playfair Display", "serif"]
           },
           "fontSize": {
             "body-lg": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
@@ -103,6 +104,12 @@
     }
   </script>
   <style>
+    .scrapbook-texture {
+      background-color: #f5fbee;
+      background-image: radial-gradient(#d6dccf 0.5px, transparent 0.5px);
+      background-size: 20px 20px;
+    }
+
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
@@ -130,21 +137,17 @@
   </style>
 </head>
 
-<body class="bg-background text-on-background font-body-lg">
+<body class="bg-background text-on-background font-body-lg scrapbook-texture">
   <!-- TopAppBar -->
   <header
     class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200">
     <div class="flex items-center w-full">
       <div class="flex-1 flex justify-start">
-        <span
-          class="material-symbols-outlined text-green-800 dark:text-green-500 cursor-pointer transition-transform duration-200 active:scale-95"
-          data-icon="menu">menu</span>
       </div>
       <div class="flex-none">
         <h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
       </div>
       <div class="flex-1 flex justify-end">
-        <span class="material-symbols-outlined text-green-800 dark:text-green-500" data-icon="person">person</span>
       </div>
     </div>
   </header>
@@ -248,9 +251,35 @@
               </p>
             </div>
             <button
-              class="mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors">
+              type="button"
+              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+              aria-expanded="false"
+              aria-controls="details-mam"
+              data-target="details-mam">
               Saiba mais
             </button>
+            <div id="details-mam" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-5BRdOivwFXSRTq9Dp_7C8yUdEryYP7X8nTuEeovN-BU3gRouyic-rNeEfp_tiodelydciZO4gT0GDhNKmxJVdGqkvWHpYWz5xTDLi95skiHzbKrQfR8eEcmF9DT1-qG2lsJbI1xUBND8Znf_s2qqQy0Ot-SCBUzoUzmzE_dj_cXx5j_xGb6RRFjT51LndJ7qXs73bngZzwyH-K8yxOr9xqB3e7-xlY3HxZchgBxJiKw4nWbxGLv2x-r_bwJeeRjyXconVIPZWUs" alt="Atividade de colagem no Museu de Arte Moderna" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+              <div class="space-y-3">
+                <h5 class="font-headline-md text-headline-md text-on-surface">Oficina e experiência sensorial</h5>
+                <p>
+                  Durante a visita, os participantes exploraram a arte contemporânea brasileira antes de entrar
+                  em uma oficina prática de colagem. A experiência combinou história visual, materiais naturais e
+                  criação coletiva.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+                  <li>Visita guiada com explicações sobre artistas nacionais</li>
+                  <li>Atividade prática de composição e colagem</li>
+                  <li>Momento de reflexão sobre identidade cultural</li>
+                </ul>
+              </div>
+              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+                <p>
+                  A saída anterior reforçou a ideia de que cultura é prática. As crianças puderam ver arte, tocar
+                  materiais e criar suas próprias narrativas a partir das cores e formas que encontraram no museu.
+                </p>
+              </div>
+            </div>
           </div>
         </article>
         <!-- Card 2 -->
@@ -286,9 +315,34 @@
               </p>
             </div>
             <button
-              class="mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors">
+              type="button"
+              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+              aria-expanded="false"
+              aria-controls="details-real"
+              data-target="details-real">
               Saiba mais
             </button>
+            <div id="details-real" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIO__i4P2k6GXT_sf74aI3moim5XlI8y22lv1_GBwU3pCZZk0dZ6lOJc749y8iBnCZKz4Mzzso58004ZsfYsy1klMVYhZV6rfGkaGdNiIwgqEKtOO-Qffpn8WEXUvVchpcSd8c8UR8lKKaVWTmB1JfnQP9QBKkn8I6JhoEHBsz1zoal1T8A5Ewd2w-mB9yCzYSdU2DOC5kbirvl8WP-xzrB3e60cgsWuYDaE4nNyuKAkw1er8gyxJKU_yPB57OtcExoOb64WuRz5E" alt="Visita ao Real Gabinete Português" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+              <div class="space-y-3">
+                <h5 class="font-headline-md text-headline-md text-on-surface">Literatura e memória</h5>
+                <p>
+                  Este passeio foi uma imersão nos clássicos portugueses e na arquitetura histórica do Real Gabinete.
+                  A experiência valorizou o ambiente como espaço de leitura, contação de histórias e descoberta coletiva.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+                  <li>Exploração de obras literárias com mediadores</li>
+                  <li>Atividades de observação do acervo e da arquitetura</li>
+                  <li>Inspiração para trabalhos e registros pessoais</li>
+                </ul>
+              </div>
+              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+                <p>
+                  A saída trouxe o passado para o presente: as crianças puderam conectar histórias antigas com seus próprios
+                  sentidos e experiências, ampliando o entendimento sobre como cultura e leitura caminham juntas.
+                </p>
+              </div>
+            </div>
           </div>
         </article>
       </div>
@@ -296,44 +350,53 @@
   </main>
   <!-- BottomNavBar -->
   <nav
-    class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC]/95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-200">
-    <a href="index.html">
-      <button
-        class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all">
-        <span class="material-symbols-outlined" data-icon="home">home</span>
-        <span class="text-[10px] font-bold uppercase tracking-widest">Início</span>
-      </button>
+    class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC]/95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-700">
+    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+        href="index.html">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
     </a>
-    <a href="galeria.html">
-      <button
-        class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all">
-        <span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
-        <span class="text-[10px] font-bold uppercase tracking-widest">Galeria</span>
-      </button>
+    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+        href="galeria.html">
+        <span class="material-symbols-outlined">photo_library</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Galeria</span>
     </a>
-    <a href="expedicoes.html">
-      <button
-        class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2 active:scale-90 transition-all">
-        <span class="material-symbols-outlined" data-icon="explore">explore</span>
-        <span class="text-[10px] font-bold uppercase tracking-widest">Expedições</span>
-      </button>
+    <a class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2"
+        href="expedicoes.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Expedições</span>
     </a>
   </nav>
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(function(button) {
+      var targetId = button.dataset.target;
+      var target = document.getElementById(targetId);
+      if (!target) return;
+
+      button.addEventListener('click', function() {
+        var hidden = target.classList.toggle('hidden');
+        button.textContent = hidden ? 'Saiba mais' : 'Ocultar';
+        button.setAttribute('aria-expanded', String(!hidden));
+      });
+    });
+  </script>
   <!-- Footer -->
   <footer
     class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 dark:bg-stone-950 border-t-2 border-dashed border-stone-300 dark:border-stone-700">
-    <p class="text-lg font-bold text-stone-800 dark:text-stone-200">PAC</p>
-    <div class="flex gap-md">
-      <a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 hover:text-green-700 no-underline transition-opacity"
+    <div class="text-lg font-bold text-stone-800 dark:text-stone-200 font-serif">PAC</div>
+    <p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2026</p>
+    <div class="flex gap-md mt-sm">
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
         href="sobre-nos.html">Sobre Nós</a>
-      <a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 hover:text-green-700 no-underline transition-opacity"
-        href="#">Transparência</a>
-      <a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 hover:text-green-700 no-underline transition-opacity"
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
         href="#">Voltar ao início</a>
     </div>
-    <p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">
-      PAC - Pequenos Aprendizados Culturais 2026
-    </p>
+    <div class="flex gap-md mt-sm">
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="sobre-nos.html">Sobre Nós</a>
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="#">Voltar ao início</a>
+    </div>
   </footer>
 </body>
 

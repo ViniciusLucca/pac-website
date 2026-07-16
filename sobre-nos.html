@@ -4,122 +4,134 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;display=swap"
+    rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>.scrapbook-texture {
-    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAD3gH1RU8fN7RPcdadcz0S7ylKhmKCTMeNW0_9-MCVeDBjR-Bvuk40z47P24YuudSB3m-l2MHBOB6JFWfa6gtHGFNJGg8pUY0QyWTCnwzb1VThNDUsbEJAFjKg5NHtF3-QA7FKlp_T1lHMGDwfujopSA8br3gKSRvea-NwfbKbRacLH7X8JNT1Rx9omt913JH5M2ZfwQ1D3PLjNw5i76Jj4ADNGpo5cZTbCopbReFB3n8jFiW9ATkR57CDzjmikRMPLcWphNjh8qg)
-    }
-.handwritten {
-    font-family: "Gochi Hand", cursive
-    }
-.material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
-    }</style>
+<link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container-highest": "#dee5d7",
-                    "surface-container-low": "#f0f6e8",
-                    "background": "#f5fbee",
-                    "primary": "#006c0c",
-                    "on-tertiary-fixed-variant": "#890f50",
-                    "outline-variant": "#becab7",
-                    "surface-tint": "#006e0c",
-                    "secondary": "#705d00",
-                    "on-tertiary": "#ffffff",
-                    "surface": "#f5fbee",
-                    "surface-dim": "#d6dccf",
-                    "secondary-fixed-dim": "#e9c400",
-                    "secondary-container": "#fcd400",
-                    "inverse-on-surface": "#edf3e5",
-                    "on-secondary-fixed": "#221b00",
-                    "on-background": "#171d15",
-                    "outline": "#6f7a6a",
-                    "on-primary-fixed": "#002201",
-                    "on-secondary": "#ffffff",
-                    "surface-bright": "#f5fbee",
-                    "tertiary-container": "#c5447f",
-                    "surface-container-lowest": "#ffffff",
-                    "error": "#ba1a1a",
-                    "on-secondary-fixed-variant": "#544600",
-                    "on-error-container": "#93000a",
-                    "primary-fixed": "#92fa83",
-                    "primary-container": "#1c871e",
-                    "tertiary": "#a52a66",
-                    "on-tertiary-fixed": "#3e0020",
-                    "primary-fixed-dim": "#77dd6a",
-                    "tertiary-fixed-dim": "#ffb0cc",
-                    "on-surface": "#171d15",
-                    "on-surface-variant": "#3f4a3b",
-                    "surface-variant": "#dee5d7",
-                    "inverse-primary": "#77dd6a",
-                    "on-tertiary-container": "#fffbff",
-                    "on-primary": "#ffffff",
-                    "secondary-fixed": "#ffe16d",
-                    "on-error": "#ffffff",
-                    "surface-container": "#eaf0e3",
-                    "inverse-surface": "#2c3229",
-                    "error-container": "#ffdad6",
-                    "on-primary-fixed-variant": "#005307",
-                    "tertiary-fixed": "#ffd9e4",
-                    "on-secondary-container": "#6e5c00",
-                    "on-primary-container": "#f8fff0",
-                    "surface-container-high": "#e4eadd"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "xs": "4px",
-                    "xl": "64px",
-                    "base": "8px",
-                    "md": "24px",
-                    "lg": "40px",
-                    "margin": "20px",
-                    "gutter": "16px",
-                    "sm": "12px"
-            },
-            "fontFamily": {
-                    "body-lg": ["Lexend"],
-                    "button": ["Lexend"],
-                    "body-sm": ["Lexend"],
-                    "label-lg": ["Lexend"],
-                    "headline-lg": ["Lexend"],
-                    "headline-md": ["Lexend"]
-            },
-            "fontSize": {
-                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600"}],
-                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
-                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
-            }
-          },
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-highest": "#dee5d7",
+                "surface-container-low": "#f0f6e8",
+                "background": "#f5fbee",
+                "primary": "#006c0c",
+                "on-tertiary-fixed-variant": "#890f50",
+                "outline-variant": "#becab7",
+                "surface-tint": "#006e0c",
+                "secondary": "#705d00",
+                "on-tertiary": "#ffffff",
+                "surface": "#f5fbee",
+                "surface-dim": "#d6dccf",
+                "secondary-fixed-dim": "#e9c400",
+                "secondary-container": "#fcd400",
+                "inverse-on-surface": "#edf3e5",
+                "on-secondary-fixed": "#221b00",
+                "on-background": "#171d15",
+                "outline": "#6f7a6a",
+                "on-primary-fixed": "#002201",
+                "on-secondary": "#ffffff",
+                "surface-bright": "#f5fbee",
+                "tertiary-container": "#c5447f",
+                "surface-container-lowest": "#ffffff",
+                "error": "#ba1a1a",
+                "on-secondary-fixed-variant": "#544600",
+                "on-error-container": "#93000a",
+                "primary-fixed": "#92fa83",
+                "primary-container": "#1c871e",
+                "tertiary": "#a52a66",
+                "on-tertiary-fixed": "#3e0020",
+                "primary-fixed-dim": "#77dd6a",
+                "tertiary-fixed-dim": "#ffb0cc",
+                "on-surface": "#171d15",
+                "on-surface-variant": "#3f4a3b",
+                "surface-variant": "#dee5d7",
+                "inverse-primary": "#77dd6a",
+                "on-tertiary-container": "#fffbff",
+                "on-primary": "#ffffff",
+                "secondary-fixed": "#ffe16d",
+                "on-error": "#ffffff",
+                "surface-container": "#eaf0e3",
+                "inverse-surface": "#2c3229",
+                "error-container": "#ffdad6",
+                "on-primary-fixed-variant": "#005307",
+                "tertiary-fixed": "#ffd9e4",
+                "on-secondary-container": "#6e5c00",
+                "on-primary-container": "#f8fff0",
+                "surface-container-high": "#e4eadd"
         },
-      }
-    </script>
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "xs": "4px",
+                "xl": "64px",
+                "base": "8px",
+                "md": "24px",
+                "lg": "40px",
+                "margin": "20px",
+                "gutter": "16px",
+                "sm": "12px"
+        },
+        "fontFamily": {
+                "body-lg": ["Lexend"],
+                "button": ["Lexend"],
+                "body-sm": ["Lexend"],
+                "label-lg": ["Lexend"],
+                "headline-lg": ["Lexend"],
+                "headline-md": ["Lexend"],
+                "serif": ["Playfair Display", "serif"]
+        },
+        "fontSize": {
+                "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+        }
+      },
+    },
+  }
+</script>
 <style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+.scrapbook-texture {
+    background-color: #f5fbee;
+    background-image: radial-gradient(#d6dccf 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+}
+.handwritten {
+    font-family: "Gochi Hand", cursive;
+}
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+body {
+  min-height: max(884px, 100dvh);
+}
+</style>
 </head>
 <body class="bg-background text-on-background font-body-lg overflow-x-hidden scrapbook-texture">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] border-b-2 border-stone-800 shadow-none">
-<button class="transition-transform duration-200 active:scale-95 flex items-center justify-center p-2 rounded-full hover:bg-stone-200/50">
-<span class="material-symbols-outlined text-green-800" data-icon="menu">menu</span>
-</button>
-<h1 class="text-2xl font-black text-green-800 uppercase tracking-tighter font-serif">PAC</h1>
-<div class="w-10"></div> <!-- Spacer for centering -->
+<header
+    class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200">
+    <div class="flex items-center w-full">
+        <div class="flex-1 flex justify-start">
+        </div>
+        <div class="flex-none">
+            <h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
+        </div>
+        <div class="flex-1 flex justify-end">
+        </div>
+    </div>
 </header>
 <main class="pt-24 pb-32 px-margin max-w-4xl mx-auto space-y-12">
 <!-- Hero Section: Scrapbook Title -->
@@ -188,27 +200,40 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 border-t-2 border-dashed border-stone-300">
-<h3 class="text-lg font-bold text-stone-800 font-serif">PAC - Pequenos Aprendizados Culturais 2026</h3>
-<div class="flex gap-6">
-<a class="font-serif text-sm italic text-stone-500 no-underline hover:text-green-700 transition-opacity" href="#">Sobre Nós</a>
-<a class="font-serif text-sm italic text-stone-500 no-underline hover:text-green-700 transition-opacity" href="#">Transparência</a>
-<a class="font-serif text-sm italic text-stone-500 no-underline hover:text-green-700 transition-opacity" href="#">Privacidade</a>
-</div>
+<footer
+    class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 dark:bg-stone-950 border-t-2 border-dashed border-stone-300 dark:border-stone-700">
+    <div class="text-lg font-bold text-stone-800 dark:text-stone-200 font-serif">PAC</div>
+    <p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2026</p>
+    <div class="flex gap-md mt-sm">
+        <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+            href="sobre-nos.html">Sobre Nós</a>
+        <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+            href="#">Voltar ao início</a>
+    </div>
+    <div class="flex gap-md mt-sm">
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="sobre-nos.html">Sobre Nós</a>
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="#">Voltar ao início</a>
+    </div>
 </footer>
 <!-- BottomNavBar -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC] bg-opacity-95 backdrop-blur-sm border-t-2 border-stone-800">
-<a class="flex flex-col items-center justify-center text-stone-600 px-3 py-1 active:scale-90 transition-all" href="index.html">
-<span class="material-symbols-outlined" data-icon="home">home</span>
-<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700">Início</span>
-</a>
-<a class="flex flex-col items-center justify-center text-stone-600 px-3 py-1 active:scale-90 transition-all" href="galeria.html">
-<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
-<span class="text-[10px] font-bold uppercase tracking-widest text-stone-700">Galeria</span>
-</a>
-<a class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2 active:scale-90 transition-all" href="expedicoes.html">
-<span class="material-symbols-outlined" data-icon="explore">explore</span>
-<span class="text-[10px] font-bold uppercase tracking-widest text-stone-900">Expedições</span>
-</a>
+<nav
+    class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC]/95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-700">
+    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+        href="index.html">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+        href="galeria.html">
+        <span class="material-symbols-outlined">photo_library</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Galeria</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+        href="expedicoes.html">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Expedições</span>
+    </a>
 </nav>
 </body></html>

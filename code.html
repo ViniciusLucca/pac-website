@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;display=swap"
     rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -88,7 +88,8 @@
             "body-sm": ["Lexend"],
             "label-lg": ["Lexend"],
             "headline-lg": ["Lexend"],
-            "headline-md": ["Lexend"]
+            "headline-md": ["Lexend"],
+            "serif": ["Playfair Display", "serif"]
           },
           "fontSize": {
             "body-lg": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
@@ -103,6 +104,12 @@
     }
   </script>
   <style>
+    .scrapbook-texture {
+      background-color: #f5fbee;
+      background-image: radial-gradient(#d6dccf 0.5px, transparent 0.5px);
+      background-size: 20px 20px;
+    }
+
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
@@ -131,17 +138,19 @@
   </style>
 </head>
 
-<body class="bg-background text-on-background font-body-lg min-h-screen pb-32">
+<body class="bg-background text-on-background font-body-lg min-h-screen scrapbook-texture">
   <!-- TopAppBar -->
   <header
     class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200">
-    <div class="flex items-center w-12">
-      <button class="p-2 focus:outline-none">
-        <span class="material-symbols-outlined text-green-800 dark:text-green-500">menu</span>
-      </button>
+    <div class="flex items-center w-full">
+      <div class="flex-1 flex justify-start">
+      </div>
+      <div class="flex-none">
+        <h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
+      </div>
+      <div class="flex-1 flex justify-end">
+      </div>
     </div>
-    <h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
-    <div class="w-12 flex justify-end"></div>
   </header>
   <main class="pt-24 px-margin max-w-4xl mx-auto">
     <!-- Hero Section -->
@@ -241,17 +250,20 @@
   </main>
   <!-- Footer -->
   <footer
-    class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center border-t-2 border-dashed border-stone-300 dark:border-stone-700 bg-stone-100 dark:bg-stone-950">
-    <div class="text-lg font-bold text-stone-800 dark:text-stone-200">PAC</div>
-    <p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2026
-    </p>
-    <div class="flex gap-4">
-      <a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 no-underline hover:text-green-700"
+    class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 dark:bg-stone-950 border-t-2 border-dashed border-stone-300 dark:border-stone-700">
+    <div class="text-lg font-bold text-stone-800 dark:text-stone-200 font-serif">PAC</div>
+    <p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2026</p>
+    <div class="flex gap-md mt-sm">
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
         href="sobre-nos.html">Sobre Nós</a>
-      <a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 no-underline hover:text-green-700"
-        href="#">Transparência</a>
-      <a class="font-serif text-sm italic text-stone-500 dark:text-stone-400 no-underline hover:text-green-700"
-        href="#">Privacidade</a>
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="#">Voltar ao início</a>
+    </div>
+    <div class="flex gap-md mt-sm">
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="sobre-nos.html">Sobre Nós</a>
+      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+        href="#">Voltar ao início</a>
     </div>
   </footer>
   <!-- BottomNavBar -->
