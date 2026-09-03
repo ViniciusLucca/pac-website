@@ -7,11 +7,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;display=swap"
-    rel="stylesheet" />
+  href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;display=swap"
+  rel="stylesheet" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+  rel="stylesheet" />
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -109,19 +109,19 @@
       background-image: radial-gradient(#d6dccf 0.5px, transparent 0.5px);
       background-size: 20px 20px;
     }
-
+    
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
-
+    
     .scrapbook-rotate-left {
       transform: rotate(-1deg);
     }
-
+    
     .scrapbook-rotate-right {
       transform: rotate(1.5deg);
     }
-
+    
     .scrapbook-tape {
       position: absolute;
       background: rgba(255, 215, 0, 0.4);
@@ -140,437 +140,442 @@
 <body class="bg-background text-on-background font-body-lg scrapbook-texture">
   <!-- TopAppBar -->
   <header
-    class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200">
-    <div class="flex items-center w-full">
-      <div class="flex-1 flex justify-start">
-      </div>
-      <div class="flex-none">
-        <h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
-      </div>
-      <div class="flex-1 flex justify-end">
-      </div>
+  class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-[#F5F5DC] dark:bg-stone-900 border-b-2 border-stone-800 dark:border-stone-200">
+  <div class="flex items-center w-full">
+    <div class="flex-1 flex justify-start">
     </div>
-  </header>
-  <main class="pt-24 pb-32 px-margin max-w-5xl mx-auto space-y-xl">
-    <!-- Page Header -->
-    <div class="space-y-base scrapbook-rotate-left">
-      <h2 class="font-headline-lg text-headline-lg text-primary">Expedições Culturais</h2>
-      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-        Junte-se a nós em jornadas imersivas para descobrir o coração da nossa herança cultural e histórica.
-      </p>
+    <div class="flex-none">
+      <h1 class="text-2xl font-black text-green-800 dark:text-green-500 uppercase tracking-tighter">PAC</h1>
     </div>
-    <!-- Section: Próxima Saída -->
-    <section class="relative">
+    <div class="flex-1 flex justify-end">
+    </div>
+  </div>
+</header>
+<main class="pt-24 pb-32 px-margin max-w-5xl mx-auto space-y-xl">
+  <!-- Page Header -->
+  <div class="space-y-base scrapbook-rotate-left">
+    <h2 class="font-headline-lg text-headline-lg text-primary">Expedições Culturais</h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+      Junte-se a nós em jornadas imersivas para descobrir o coração da nossa herança cultural e histórica.
+    </p>
+  </div>
+  <!-- Section: Próxima Saída -->
+  <section class="relative">
+    <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center bg-surface-container p-md md:p-lg border-2 border-primary-container rounded-xl shadow-sm scrapbook-rotate-right">
+    <!-- Logistics Column -->
+    <div class="space-y-md">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center bg-surface-container p-md md:p-lg border-2 border-primary-container rounded-xl shadow-sm scrapbook-rotate-right">
-        <!-- Logistics Column -->
-        <div class="space-y-md">
-          <div
-            class="inline-block px-sm py-xs bg-secondary-container text-on-secondary-container border-2 border-on-secondary-container rounded-full font-label-lg text-label-lg -rotate-1">
-            PRÓXIMA SAÍDA
-          </div>
-          <h3 class="font-headline-md text-headline-md text-on-surface">Pelourinho: Raízes e Ritmos</h3>
-          <div class="space-y-sm">
-            <div class="flex items-start gap-sm">
-              <span class="material-symbols-outlined text-primary" data-icon="calendar_month">calendar_month</span>
-              <div>
-                <p class="font-label-lg text-label-lg text-on-surface">Data</p>
-                <p class="font-body-sm text-body-sm">15 de Junho, 2024 - 09:00h</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-sm">
-              <span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
-              <div>
-                <p class="font-label-lg text-label-lg text-on-surface">Endereço</p>
-                <p class="font-body-sm text-body-sm">Centro Histórico, Salvador - BA</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-sm">
-              <span class="material-symbols-outlined text-primary" data-icon="meet_guide">meet</span>
-              <div>
-                <p class="font-label-lg text-label-lg text-on-surface">Ponto de Encontro</p>
-                <p class="font-body-sm text-body-sm">Largo do Pelourinho, em frente à Fundação Casa de Jorge Amado.</p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="w-full md:w-auto px-lg py-md bg-primary text-on-primary font-button text-button rounded-xl border-b-4 border-stone-900 active:translate-y-1 active:border-b-0 transition-all">
-            Venha conosco!
-          </button>
-        </div>
-        <!-- Representative Image Column -->
-        <div class="relative group">
-          <div class="scrapbook-tape -top-4 -left-4 scrapbook-rotate-left"></div>
-          <div class="scrapbook-tape -bottom-4 -right-4 scrapbook-rotate-right"></div>
-          <div
-            class="p-sm bg-white border-2 border-stone-800 rounded-lg shadow-lg group-hover:rotate-1 transition-transform duration-300">
-            <img alt="Museu de Zoologia USP" class="w-full aspect-square object-cover rounded-md"
-              data-alt="Uma fotografia de um museu dedicado à biodiversidade e história natural, mostrando exposições cuidadosamente organizadas com esqueletos de animais, fósseis e especímens naturalizados. A iluminação é profissional, realçando os detalhes das peças. O ambiente é educacional e inspirador, com um design que equilibra história natural e espaço moderno."
-              src="images/saidas/5-USP/museu-zoologia-usp.webp" />
-          </div>
+      class="inline-block px-sm py-xs bg-secondary-container text-on-secondary-container border-2 border-on-secondary-container rounded-full font-label-lg text-label-lg -rotate-1">
+      EM BREVE
+    </div>
+    <h3 class="font-headline-md text-headline-md text-on-surface">Uma nova expedição está sendo preparada</h3>
+    <div class="space-y-sm">
+      <div class="flex items-start gap-sm">
+        <span class="material-symbols-outlined text-primary" data-icon="calendar_month">calendar_month</span>
+        <div>
+          <p class="font-label-lg text-label-lg text-on-surface">Data</p>
+          <p class="font-body-sm text-body-sm">Em breve</p>
         </div>
       </div>
-    </section>
-    <!-- Section: Saídas Anteriores -->
-    <section class="space-y-lg">
-      <div class="flex items-center gap-sm">
-        <span class="material-symbols-outlined text-tertiary" data-icon="history">history</span>
-        <h3 class="font-headline-md text-headline-md text-on-surface">Saídas Anteriores</h3>
+      <div class="flex items-start gap-sm">
+        <span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+        <div>
+          <p class="font-label-lg text-label-lg text-on-surface">Endereço</p>
+          <p class="font-body-sm text-body-sm">Local a definir</p>
+        </div>
       </div>
-      <div class="grid grid-cols-1 gap-gutter">
-        <!-- Card 1 -->
-        <article
-          class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
-          <div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
-            <img alt="Museu Afro"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              data-alt="Uma fotografia da fachada impressionante do Museu Afro Brasil, mostrando a arquitetura histórica com tons quentes e detalhes decorativos. A imagem captura a importância cultural do espaço com lighting natural que realça a textura das paredes e a grandiosidade da estrutura."
-              src="images/saidas/1-museuafro/museu-afro-fachada-allisonsales.jpg" />
-          </div>
-          <div class="p-md flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start">
-                <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Museu Afro Brasil</h4>
-                <div class="flex text-secondary items-center">
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="ml-xs font-label-lg text-label-lg">5.0</span>
-                </div>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                Uma jornada profunda pela história, arte e cultura africana e afro-brasileira, explorando narrativas de resistência e criatividade.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
-              aria-expanded="false"
-              aria-controls="details-afro"
-              data-target="details-afro">
-              Saiba mais
-            </button>
-            <div id="details-afro" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
-              <img src="images/saidas/1-museuafro/museu-afro-fachada-allisonsales.jpg" alt="Museu Afro Brasil" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
-              <div class="space-y-3">
-                <h5 class="font-headline-md text-headline-md text-on-surface">Histórias e identidades africanas</h5>
-                <p>
-                  Esta expedição mergulhou nas coleções do Museu Afro Brasil, explorando arte, artefatos históricos e expressões culturais que contam a história da diáspora africana. Os participantes vivenciaram a riqueza da herança cultural através de peças autênticas e narrativas empoderadoras.
-                </p>
-                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
-                  <li>Exploração de acervo sobre história africana</li>
-                  <li>Compreensão da influência cultural afro-brasileira</li>
-                  <li>Reflexão sobre identidade e resistência</li>
-                </ul>
-              </div>
-              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
-                <p>
-                  A visita reforçou a importância de conhecer e valorizar as múltiplas narrativas que formam a identidade cultural brasileira.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- Card 2 -->
-        <article
-          class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
-          <div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
-            <img alt="Pavilhão Japonês"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              data-alt="Uma fotografia serena do Pavilhão Japonês no Parque do Ibirapuera, mostrando a arquitetura tradicional japonesa com linhas limpas e elegantes. A estrutura branca contrasta com a vegetação verde e os detalhes decorativos de madeira. A iluminação natural realça a simplicidade e a harmonia do design."
-              src="images/saidas/2-pavilhaojapones/pavilhao-japones-tababenedictoestadao.jpg" />
-          </div>
-          <div class="p-md flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start">
-                <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Pavilhão Japonês</h4>
-                <div class="flex text-secondary items-center">
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="ml-xs font-label-lg text-label-lg">5.0</span>
-                </div>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                Uma imersão na estética e filosofia japonesa, explorando a beleza da simplicidade e a harmonia com a natureza.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
-              aria-expanded="false"
-              aria-controls="details-japao"
-              data-target="details-japao">
-              Saiba mais
-            </button>
-            <div id="details-japao" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
-              <img src="images/saidas/2-pavilhaojapones/pavilhao-japones-tababenedictoestadao.jpg" alt="Pavilhão Japonês" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
-              <div class="space-y-3">
-                <h5 class="font-headline-md text-headline-md text-on-surface">Zen, harmonia e tradição</h5>
-                <p>
-                  No Pavilhão Japonês, os participantes experimentaram a filosofia Zen através da arquitetura tradicional, dos jardins cuidadosamente planejados e dos espaços que convidam à contemplação. A visita revelou como a cultura japonesa valoriza a simplicidade, a natureza e o equilíbrio.
-                </p>
-                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
-                  <li>Compreensão da arquitetura e design japonês</li>
-                  <li>Observação dos princípios de beleza e harmonia</li>
-                  <li>Reflexão sobre a relação entre arte e natureza</li>
-                </ul>
-              </div>
-              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
-                <p>
-                  A experiência cultivou uma apreciação pelas diferenças culturais e pela sabedoria ancestral que permeia a estética japonesa.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- Card 3 -->
-        <article
-          class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
-          <div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
-            <img alt="Pinacoteca do Estado"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              data-alt="Uma fotografia da fachada impressionante da Pinacoteca do Estado em São Paulo, mostrando a arquitetura histórica em tijolos vermelhos com detalhes neoclássicos. A entrada principal é elegante e monumental, refletindo a importância do museu como templo da arte."
-              src="images/saidas/3-pinacoteca/pinacoteca-sao-paulo-state-37433618.webp" />
-          </div>
-          <div class="p-md flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start">
-                <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Pinacoteca do Estado</h4>
-                <div class="flex text-secondary items-center">
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="ml-xs font-label-lg text-label-lg">5.0</span>
-                </div>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                Uma viagem através da história da arte brasileira, explorando obras de mestres e a evolução da expressão artística nacional.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
-              aria-expanded="false"
-              aria-controls="details-pinacoteca"
-              data-target="details-pinacoteca">
-              Saiba mais
-            </button>
-            <div id="details-pinacoteca" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
-              <img src="images/saidas/3-pinacoteca/pinacoteca-sao-paulo-state-37433618.webp" alt="Pinacoteca do Estado" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
-              <div class="space-y-3">
-                <h5 class="font-headline-md text-headline-md text-on-surface">Mestres da arte brasileira</h5>
-                <p>
-                  Na Pinacoteca, os participantes imergirarn na história artística do Brasil, conhecendo obras de Portinari, Athos Bulcão e outros mestres. A experiência combinai análise visual, contextualização histórica e momentos de contemplação frente às obras originais.
-                </p>
-                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
-                  <li>Apreciação de obras de arte brasileira autêntica</li>
-                  <li>Compreensão de movimentos artísticos e períodos históricos</li>
-                  <li>Desenvolvimento do olhar crítico e sensível</li>
-                </ul>
-              </div>
-              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
-                <p>
-                  A visita expandiu o entendimento sobre como a arte reflete a alma de um povo e a importância de preservar e celebrar a criatividade nacional.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- Card 4 -->
-        <article
-          class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
-          <div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
-            <img alt="MASP - Museu de Arte de São Paulo"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              data-alt="Uma fotografia do icônico edifício do MASP, com seu vão livre revolucionário e o vermelho vibrante da estrutura moderna destacando-se na paisagem urbana. A arquitetura de Lina Bo Bardi é um ícone de inovação e modernismo brasileiro."
-              src="images/saidas/4-MASP/masp.jpg" />
-          </div>
-          <div class="p-md flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start">
-                <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">MASP - Museu de Arte</h4>
-                <div class="flex text-secondary items-center">
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="ml-xs font-label-lg text-label-lg">5.0</span>
-                </div>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                Exploração da arte moderna e contemporânea em um espaço arquitetônico revolucionário que é em si uma obra-prima.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
-              aria-expanded="false"
-              aria-controls="details-masp"
-              data-target="details-masp">
-              Saiba mais
-            </button>
-            <div id="details-masp" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
-              <img src="images/saidas/4-MASP/masp.jpg" alt="MASP" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
-              <div class="space-y-3">
-                <h5 class="font-headline-md text-headline-md text-on-surface">Arquitetura e inovação cultural</h5>
-                <p>
-                  No MASP, os participantes descobriram como a arquitetura de Lina Bo Bardi revolucionou os conceitos de museu, criando um espaço democrático onde a arte se encontra com a cidade. A experiência explorou obras da coleção permanente e temporária, combinando arte e espaço urbano.
-                </p>
-                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
-                  <li>Apreciação da arquitetura moderna brasileira</li>
-                  <li>Compreensão da arte como espaço público e democrático</li>
-                  <li>Diálogo entre obras e paisagem urbana</li>
-                </ul>
-              </div>
-              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
-                <p>
-                  A visita inspirou reflexões sobre como a arte transcende as paredes e se torna parte viva da cidade e da vida cotidiana.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- Card 5 LIBERAR DISPLAY-NONE SOMENTE APÓS A SAÍDA -->
-        <article style="display: none;"
-          class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
-          <div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
-            <img alt="Museu de Zoologia - USP"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              data-alt="Uma fotografia do interior do Museu de Zoologia da USP, mostrando esqueletos de animais pré-históricos e contemporâneos, fósseis e especímens naturalizados em vitrines iluminadas. O espaço é educacional e inspira curiosidade sobre biodiversidade."
-              src="images/saidas/5-USP/museu-zoologia-usp.webp" />
-          </div>
-          <div class="p-md flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start">
-                <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Museu de Zoologia - USP</h4>
-                <div class="flex text-secondary items-center">
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-sm" data-icon="star"
-                    style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="ml-xs font-label-lg text-label-lg">5.0</span>
-                </div>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                Uma jornada pela história natural e biodiversidade do Brasil, conectando ciência, evolução e conservação ambiental.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
-              aria-expanded="false"
-              aria-controls="details-usp"
-              data-target="details-usp">
-              Saiba mais
-            </button>
-            <div id="details-usp" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
-              <img src="images/saidas/5-USP/museu-zoologia-usp.webp" alt="Museu de Zoologia USP" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
-              <div class="space-y-3">
-                <h5 class="font-headline-md text-headline-md text-on-surface">Biodiversidade e história natural</h5>
-                <p>
-                  No Museu de Zoologia da USP, os participantes exploraram a riqueza da fauna brasileira através de esqueletos, fósseis e especímens naturalizados. A experiência conectou conceitos de evolução, adaptação e a importância da preservação da biodiversidade para as futuras gerações.
-                </p>
-                <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
-                  <li>Compreensão da evolução e diversidade animal</li>
-                  <li>Conhecimento sobre fauna brasileira e mundial</li>
-                  <li>Conscientização sobre conservação ambiental</li>
-                </ul>
-              </div>
-              <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
-                <p>
-                  A visita reforçou a importância de proteger nosso patrimônio natural e compreender como a biodiversidade sustenta toda a vida no planeta.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
+      <div class="flex items-start gap-sm">
+        <span class="material-symbols-outlined text-primary" data-icon="meet_guide">meet</span>
+        <div>
+          <p class="font-label-lg text-label-lg text-on-surface">Ponto de Encontro</p>
+          <p class="font-body-sm text-body-sm">Os detalhes serão divulgados assim que a próxima saída estiver confirmada.</p>
+        </div>
       </div>
-    </section>
-  </main>
-  <!-- BottomNavBar -->
-  <nav
-    class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC]/95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-700">
-    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
-        href="index.html">
-        <span class="material-symbols-outlined">home</span>
-        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
-        href="galeria.html">
-        <span class="material-symbols-outlined">photo_library</span>
-        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Galeria</span>
-    </a>
-    <a class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2"
-        href="expedicoes.html">
-        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
-        <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Expedições</span>
-    </a>
-  </nav>
-  <script>
-    document.querySelectorAll('.dropdown-toggle').forEach(function(button) {
-      var targetId = button.dataset.target;
-      var target = document.getElementById(targetId);
-      if (!target) return;
-
-      button.addEventListener('click', function() {
-        var hidden = target.classList.toggle('hidden');
-        button.textContent = hidden ? 'Saiba mais' : 'Ocultar';
-        button.setAttribute('aria-expanded', String(!hidden));
-      });
+    </div>
+    <a href="https://www.instagram.com/pequenosaprendizadosculturais/">
+      <button
+      class="w-full md:w-auto px-lg py-md bg-primary text-on-primary font-button text-button rounded-xl border-b-4 border-stone-900 active:translate-y-1 active:border-b-0 transition-all">
+      <!-- Instagram Icon -->
+      <svg style="display: inline;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg> Acompanhe as novidades
+    </button>
+  </a>
+</div>
+<!-- Representative Image Column -->
+<div class="relative group">
+  <div class="scrapbook-tape -top-4 -left-4 scrapbook-rotate-left"></div>
+  <div class="scrapbook-tape -bottom-4 -right-4 scrapbook-rotate-right"></div>
+  <div
+  class="p-sm bg-white border-2 border-stone-800 rounded-lg shadow-lg group-hover:rotate-1 transition-transform duration-300">
+  <img alt="Fachada da Pinacoteca de São Paulo" class="w-full aspect-square object-cover rounded-md"
+  data-alt="Fotografia da fachada histórica da Pinacoteca de São Paulo, representando as experiências culturais que o PAC prepara para suas próximas expedições."
+  src="images/poster-em-breve.svg" />
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Saídas Anteriores -->
+<section class="space-y-lg">
+  <div class="flex items-center gap-sm">
+    <span class="material-symbols-outlined text-tertiary" data-icon="history">history</span>
+    <h3 class="font-headline-md text-headline-md text-on-surface">Saídas Anteriores</h3>
+  </div>
+  <div class="grid grid-cols-1 gap-gutter">
+    <!-- Card 1 -->
+    <article
+    class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+    <div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+      <img alt="Museu Afro"
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      data-alt="Uma fotografia da fachada impressionante do Museu Afro Brasil, mostrando a arquitetura histórica com tons quentes e detalhes decorativos. A imagem captura a importância cultural do espaço com lighting natural que realça a textura das paredes e a grandiosidade da estrutura."
+      src="images/saidas/1-museuafro/museu-afro-fachada-allisonsales.jpg" />
+    </div>
+    <div class="p-md flex-1 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-start">
+          <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Museu Afro Brasil</h4>
+          <div class="flex text-secondary items-center">
+            <span class="material-symbols-outlined text-sm" data-icon="star"
+            style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-sm" data-icon="star"
+            style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-sm" data-icon="star"
+            style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-sm" data-icon="star"
+            style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-sm" data-icon="star"
+            style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="ml-xs font-label-lg text-label-lg">5.0</span>
+          </div>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Uma jornada profunda pela história, arte e cultura africana e afro-brasileira, explorando narrativas de resistência e criatividade.
+        </p>
+      </div>
+      <button
+      type="button"
+      class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+      aria-expanded="false"
+      aria-controls="details-afro"
+      data-target="details-afro">
+      Saiba mais
+    </button>
+    <div id="details-afro" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+      <img src="images/saidas/1-museuafro/museu-afro-fachada-allisonsales.jpg" alt="Museu Afro Brasil" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+      <div class="space-y-3">
+        <h5 class="font-headline-md text-headline-md text-on-surface">Histórias e identidades africanas</h5>
+        <p>
+          Esta expedição mergulhou nas coleções do Museu Afro Brasil, explorando arte, artefatos históricos e expressões culturais que contam a história da diáspora africana. Os participantes vivenciaram a riqueza da herança cultural através de peças autênticas e narrativas empoderadoras.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+          <li>Exploração de acervo sobre história africana</li>
+          <li>Compreensão da influência cultural afro-brasileira</li>
+          <li>Reflexão sobre identidade e resistência</li>
+        </ul>
+      </div>
+      <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+        <p>
+          A visita reforçou a importância de conhecer e valorizar as múltiplas narrativas que formam a identidade cultural brasileira.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- Card 2 -->
+<article
+class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+  <img alt="Pavilhão Japonês"
+  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+  data-alt="Uma fotografia serena do Pavilhão Japonês no Parque do Ibirapuera, mostrando a arquitetura tradicional japonesa com linhas limpas e elegantes. A estrutura branca contrasta com a vegetação verde e os detalhes decorativos de madeira. A iluminação natural realça a simplicidade e a harmonia do design."
+  src="images/saidas/2-pavilhaojapones/pavilhao-japones-tababenedictoestadao.jpg" />
+</div>
+<div class="p-md flex-1 flex flex-col justify-between">
+  <div>
+    <div class="flex justify-between items-start">
+      <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Pavilhão Japonês</h4>
+      <div class="flex text-secondary items-center">
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="ml-xs font-label-lg text-label-lg">5.0</span>
+      </div>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+      Uma imersão na estética e filosofia japonesa, explorando a beleza da simplicidade e a harmonia com a natureza.
+    </p>
+  </div>
+  <button
+  type="button"
+  class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+  aria-expanded="false"
+  aria-controls="details-japao"
+  data-target="details-japao">
+  Saiba mais
+</button>
+<div id="details-japao" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+  <img src="images/saidas/2-pavilhaojapones/pavilhao-japones-tababenedictoestadao.jpg" alt="Pavilhão Japonês" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+  <div class="space-y-3">
+    <h5 class="font-headline-md text-headline-md text-on-surface">Zen, harmonia e tradição</h5>
+    <p>
+      No Pavilhão Japonês, os participantes experimentaram a filosofia Zen através da arquitetura tradicional, dos jardins cuidadosamente planejados e dos espaços que convidam à contemplação. A visita revelou como a cultura japonesa valoriza a simplicidade, a natureza e o equilíbrio.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+      <li>Compreensão da arquitetura e design japonês</li>
+      <li>Observação dos princípios de beleza e harmonia</li>
+      <li>Reflexão sobre a relação entre arte e natureza</li>
+    </ul>
+  </div>
+  <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+    <p>
+      A experiência cultivou uma apreciação pelas diferenças culturais e pela sabedoria ancestral que permeia a estética japonesa.
+    </p>
+  </div>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article
+class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+  <img alt="Pinacoteca do Estado"
+  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+  data-alt="Uma fotografia da fachada impressionante da Pinacoteca do Estado em São Paulo, mostrando a arquitetura histórica em tijolos vermelhos com detalhes neoclássicos. A entrada principal é elegante e monumental, refletindo a importância do museu como templo da arte."
+  src="images/saidas/3-pinacoteca/pinacoteca-sao-paulo-state-37433618.webp" />
+</div>
+<div class="p-md flex-1 flex flex-col justify-between">
+  <div>
+    <div class="flex justify-between items-start">
+      <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Pinacoteca do Estado</h4>
+      <div class="flex text-secondary items-center">
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="ml-xs font-label-lg text-label-lg">5.0</span>
+      </div>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+      Uma viagem através da história da arte brasileira, explorando obras de mestres e a evolução da expressão artística nacional.
+    </p>
+  </div>
+  <button
+  type="button"
+  class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+  aria-expanded="false"
+  aria-controls="details-pinacoteca"
+  data-target="details-pinacoteca">
+  Saiba mais
+</button>
+<div id="details-pinacoteca" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+  <img src="images/saidas/3-pinacoteca/pinacoteca-sao-paulo-state-37433618.webp" alt="Pinacoteca do Estado" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+  <div class="space-y-3">
+    <h5 class="font-headline-md text-headline-md text-on-surface">Mestres da arte brasileira</h5>
+    <p>
+      Na Pinacoteca, os participantes imergirarn na história artística do Brasil, conhecendo obras de Portinari, Athos Bulcão e outros mestres. A experiência combinai análise visual, contextualização histórica e momentos de contemplação frente às obras originais.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+      <li>Apreciação de obras de arte brasileira autêntica</li>
+      <li>Compreensão de movimentos artísticos e períodos históricos</li>
+      <li>Desenvolvimento do olhar crítico e sensível</li>
+    </ul>
+  </div>
+  <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+    <p>
+      A visita expandiu o entendimento sobre como a arte reflete a alma de um povo e a importância de preservar e celebrar a criatividade nacional.
+    </p>
+  </div>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article
+class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+  <img alt="MASP - Museu de Arte de São Paulo"
+  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+  data-alt="Uma fotografia do icônico edifício do MASP, com seu vão livre revolucionário e o vermelho vibrante da estrutura moderna destacando-se na paisagem urbana. A arquitetura de Lina Bo Bardi é um ícone de inovação e modernismo brasileiro."
+  src="images/saidas/4-MASP/masp.jpg" />
+</div>
+<div class="p-md flex-1 flex flex-col justify-between">
+  <div>
+    <div class="flex justify-between items-start">
+      <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">MASP - Museu de Arte</h4>
+      <div class="flex text-secondary items-center">
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="ml-xs font-label-lg text-label-lg">5.0</span>
+      </div>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+      Exploração da arte moderna e contemporânea em um espaço arquitetônico revolucionário que é em si uma obra-prima.
+    </p>
+  </div>
+  <button
+  type="button"
+  class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+  aria-expanded="false"
+  aria-controls="details-masp"
+  data-target="details-masp">
+  Saiba mais
+</button>
+<div id="details-masp" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+  <img src="images/saidas/4-MASP/masp.jpg" alt="MASP" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+  <div class="space-y-3">
+    <h5 class="font-headline-md text-headline-md text-on-surface">Arquitetura e inovação cultural</h5>
+    <p>
+      No MASP, os participantes descobriram como a arquitetura de Lina Bo Bardi revolucionou os conceitos de museu, criando um espaço democrático onde a arte se encontra com a cidade. A experiência explorou obras da coleção permanente e temporária, combinando arte e espaço urbano.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+      <li>Apreciação da arquitetura moderna brasileira</li>
+      <li>Compreensão da arte como espaço público e democrático</li>
+      <li>Diálogo entre obras e paisagem urbana</li>
+    </ul>
+  </div>
+  <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+    <p>
+      A visita inspirou reflexões sobre como a arte transcende as paredes e se torna parte viva da cidade e da vida cotidiana.
+    </p>
+  </div>
+</div>
+</div>
+</article>
+<!-- Card 5 LIBERAR DISPLAY-NONE SOMENTE APÓS A SAÍDA -->
+<article style=""
+class="flex flex-col md:flex-row bg-surface-container-low border-2 border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full md:w-72 h-48 md:h-auto overflow-hidden">
+  <img alt="Museu de Zoologia - USP"
+  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+  data-alt="Uma fotografia do interior do Museu de Zoologia da USP, mostrando esqueletos de animais pré-históricos e contemporâneos, fósseis e especímens naturalizados em vitrines iluminadas. O espaço é educacional e inspira curiosidade sobre biodiversidade."
+  src="images/saidas/5-USP/museu-zoologia-usp.webp" />
+</div>
+<div class="p-md flex-1 flex flex-col justify-between">
+  <div>
+    <div class="flex justify-between items-start">
+      <h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Museu de Zoologia - USP</h4>
+      <div class="flex text-secondary items-center">
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-sm" data-icon="star"
+        style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="ml-xs font-label-lg text-label-lg">5.0</span>
+      </div>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+      Uma jornada pela história natural e biodiversidade do Brasil, conectando ciência, evolução e conservação ambiental.
+    </p>
+  </div>
+  <button
+  type="button"
+  class="dropdown-toggle mt-md w-fit px-md py-xs bg-surface-variant text-on-surface-variant font-button text-button rounded-lg border-2 border-outline hover:bg-outline-variant transition-colors"
+  aria-expanded="false"
+  aria-controls="details-usp"
+  data-target="details-usp">
+  Saiba mais
+</button>
+<div id="details-usp" class="hidden mt-md p-md bg-surface-container-high rounded-xl border border-outline-variant text-body-sm text-on-surface-variant">
+  <img src="images/saidas/5-USP/museu-zoologia-usp.webp" alt="Museu de Zoologia USP" class="float-left w-52 h-52 mr-4 rounded-xl border-2 border-stone-300 object-cover" />
+  <div class="space-y-3">
+    <h5 class="font-headline-md text-headline-md text-on-surface">Biodiversidade e história natural</h5>
+    <p>
+      No Museu de Zoologia da USP, os participantes exploraram a riqueza da fauna brasileira através de esqueletos, fósseis e especímens naturalizados. A experiência conectou conceitos de evolução, adaptação e a importância da preservação da biodiversidade para as futuras gerações.
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-body-sm text-on-surface-variant">
+      <li>Compreensão da evolução e diversidade animal</li>
+      <li>Conhecimento sobre fauna brasileira e mundial</li>
+      <li>Conscientização sobre conservação ambiental</li>
+    </ul>
+  </div>
+  <div class="mt-4 border-t border-outline-variant pt-4 clear-left">
+    <p>
+      A visita reforçou a importância de proteger nosso patrimônio natural e compreender como a biodiversidade sustenta toda a vida no planeta.
+    </p>
+  </div>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav
+class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-[#F5F5DC]/95 backdrop-blur-sm border-t-2 border-stone-800 dark:border-stone-700">
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-3 py-1 active:scale-90 transition-all"
+href="galeria.html">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Galeria</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FFD700] text-stone-900 rounded-lg border-2 border-stone-800 px-3 py-1 -rotate-2"
+href="expedicoes.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Expedições</span>
+</a>
+</nav>
+<script>
+  document.querySelectorAll('.dropdown-toggle').forEach(function(button) {
+    var targetId = button.dataset.target;
+    var target = document.getElementById(targetId);
+    if (!target) return;
+    
+    button.addEventListener('click', function() {
+      var hidden = target.classList.toggle('hidden');
+      button.textContent = hidden ? 'Saiba mais' : 'Ocultar';
+      button.setAttribute('aria-expanded', String(!hidden));
     });
-  </script>
-  <!-- Footer -->
-  <footer
-    class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 dark:bg-stone-950 border-t-2 border-dashed border-stone-300 dark:border-stone-700">
-    <div class="text-lg font-bold text-stone-800 dark:text-stone-200 font-serif">PAC</div>
-    <p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2026</p>
-    <div class="flex gap-md mt-sm">
-      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
-        href="sobre-nos.html">Sobre Nós</a>
-      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
-        href="#">Voltar ao início</a>
-    </div>
-    <div class="flex gap-md mt-sm">
-      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
-        href="sobre-nos.html">Sobre Nós</a>
-      <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
-        href="#">Voltar ao início</a>
-    </div>
-  </footer>
+  });
+</script>
+<!-- Footer -->
+<footer
+class="w-full py-12 px-6 flex flex-col items-center gap-4 text-center bg-stone-100 dark:bg-stone-950 border-t-2 border-dashed border-stone-300 dark:border-stone-700">
+<div class="text-lg font-bold text-stone-800 dark:text-stone-200 font-serif">PAC</div>
+<p class="font-serif text-sm italic text-stone-500 dark:text-stone-400">PAC - Pequenos Aprendizados Culturais 2026</p>
+<div class="flex gap-md mt-sm">
+  <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+  href="sobre-nos.html">Sobre Nós</a>
+  <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+  href="#">Voltar ao início</a>
+</div>
+<div class="flex gap-md mt-sm">
+  <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+  href="sobre-nos.html">Sobre Nós</a>
+  <a class="text-stone-600 dark:text-stone-400 no-underline hover:text-green-700 hover:underline decoration-green-800 transition-opacity"
+  href="#">Voltar ao início</a>
+</div>
+</footer>
 </body>
 
 </html>
